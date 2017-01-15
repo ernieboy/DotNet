@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ using DotNet.Web.Models;
 
 namespace DotNet.Web
 {
+    [ExcludeFromCodeCoverage]
     public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
@@ -23,6 +25,7 @@ namespace DotNet.Web
         }
     }
 
+    [ExcludeFromCodeCoverage]
     public class SmsService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
@@ -32,6 +35,7 @@ namespace DotNet.Web
         }
     }
 
+    [ExcludeFromCodeCoverage]
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
     public class ApplicationUserManager : UserManager<ApplicationUser>
     {
@@ -88,6 +92,7 @@ namespace DotNet.Web
         }
     }
 
+    [ExcludeFromCodeCoverage]
     // Configure the application sign-in manager which is used in this application.
     public class ApplicationSignInManager : SignInManager<ApplicationUser, string>
     {

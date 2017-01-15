@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
 using System.Web.Mvc;
+using DotNet.Domain.Model;
 
 namespace DotNet.Web.Controllers
 {
+    [ExcludeFromCodeCoverage]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -25,6 +25,13 @@ namespace DotNet.Web.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult CustomBinder(Person person)
+        {
+            return Content("Bound");
+
         }
     }
 }

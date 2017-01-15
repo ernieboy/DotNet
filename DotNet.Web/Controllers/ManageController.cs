@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -10,6 +11,7 @@ using DotNet.Web.Models;
 
 namespace DotNet.Web.Controllers
 {
+    [ExcludeFromCodeCoverage]
     [Authorize]
     public class ManageController : Controller
     {

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Web", "DotNet.Web\DotNet.Web.csproj", "{4D59F53D-0529-44F3-AE9A-F82582D7F714}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLibrary.Utilities", "..\DotNetLibrary\DotNetLibrary.Utilities\DotNetLibrary.Utilities.csproj", "{D91342A5-A8DC-4B15-98DF-A69F77CEF6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Domain", "DotNet.Domain\DotNet.Domain.csproj", "{CFF5C674-B0A9-48B2-AB41-B191DE77FA12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4D59F53D-0529-44F3-AE9A-F82582D7F714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D59F53D-0529-44F3-AE9A-F82582D7F714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D59F53D-0529-44F3-AE9A-F82582D7F714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91342A5-A8DC-4B15-98DF-A69F77CEF6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91342A5-A8DC-4B15-98DF-A69F77CEF6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91342A5-A8DC-4B15-98DF-A69F77CEF6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91342A5-A8DC-4B15-98DF-A69F77CEF6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF5C674-B0A9-48B2-AB41-B191DE77FA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF5C674-B0A9-48B2-AB41-B191DE77FA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF5C674-B0A9-48B2-AB41-B191DE77FA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF5C674-B0A9-48B2-AB41-B191DE77FA12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
