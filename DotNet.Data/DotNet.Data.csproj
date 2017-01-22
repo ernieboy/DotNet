@@ -57,11 +57,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\DotNetEfContext.cs" />
+    <Compile Include="Context\EntityConfiguration\SwaziKingContextConfiguration.cs" />
+    <Compile Include="Context\EntityConfiguration\SwaziKingWifeContextConfiguration.cs" />
+    <Compile Include="Context\SwaziKingContext.cs" />
+    <Compile Include="Context\SwaziKingWifeContext.cs" />
     <Compile Include="EntityFramework\Extensions\EfExtensions.cs" />
     <Compile Include="EntityFramework\Interfaces\IObjectWithState.cs" />
     <Compile Include="Exceptions\DataAccessException.cs" />
     <Compile Include="Interfaces\IDataRepository.cs" />
-    <Compile Include="Models\BaseObjectWithState.cs" />
+    <Compile Include="EntityFramework\Models\BaseObjectWithState.cs" />
+    <Compile Include="Migrations\201701221623026_Initial.cs" />
+    <Compile Include="Migrations\201701221623026_Initial.Designer.cs">
+      <DependentUpon>201701221623026_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EfDataRepositoryBase.cs" />
   </ItemGroup>
@@ -74,6 +84,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701221623026_Initial.resx">
+      <DependentUpon>201701221623026_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,11 +10,11 @@ using DotNet.Data.EntityFramework.Extensions;
 using DotNet.Data.EntityFramework.Interfaces;
 using DotNet.Data.Exceptions;
 using DotNet.Data.Interfaces;
-using DotNet.Data.Models;
 using DotNetLibrary.Utilities.Tools;
 using DotNetLibrary.Utilities.Tools.Extensions;
 using LinqKit;
 using System.Linq.Dynamic;
+using DotNet.Data.EntityFramework.Models;
 
 namespace DotNet.Data.Repositories
 {

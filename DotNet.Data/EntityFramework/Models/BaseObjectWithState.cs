@@ -1,11 +1,11 @@
 ﻿using System;
 using DotNet.Data.EntityFramework.Interfaces;
 
-namespace DotNet.Data.Models
+namespace DotNet.Data.EntityFramework.Models
 {
     public abstract class BaseObjectWithState
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Guid { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModified { get; set; }

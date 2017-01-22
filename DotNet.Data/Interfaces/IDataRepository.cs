@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using DotNet.Data.EntityFramework.Interfaces;
-using DotNet.Data.Models;
+using DotNet.Data.EntityFramework.Models;
 using LinqKit;
 
 namespace DotNet.Data.Interfaces

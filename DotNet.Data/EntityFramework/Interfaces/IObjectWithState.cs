@@ -1,4 +1,4 @@
-﻿using DotNet.Data.Models;
+﻿using DotNet.Data.EntityFramework.Models;
 using DotNet.Data.Repositories;
 
 namespace DotNet.Data.EntityFramework.Interfaces
