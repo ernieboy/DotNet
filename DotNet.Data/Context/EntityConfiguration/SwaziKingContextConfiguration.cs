@@ -16,6 +16,8 @@ namespace DotNet.Data.Context.EntityConfiguration
             Property(a => a.DateModified).IsOptional();
             Ignore(a => a.ObjectState);
             Property(a => a.RowVersion).IsRowVersion();
+
+            
         }
     }
 }

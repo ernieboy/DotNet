@@ -16,6 +16,10 @@ namespace DotNet.Data.Context.EntityConfiguration
             Property(a => a.DateModified).IsOptional();
             Ignore(a => a.ObjectState);
             Property(a => a.RowVersion).IsRowVersion();
+
+          
+            //See http://www.entityframeworktutorial.net/code-first/configure-one-to-many-relationship-in-code-first.aspx
+            HasRequired(k => k.King).WithMany(w => w.Wives).HasForeignKey(fk => fk.KingId);
         }
     }
 }
